@@ -1,11 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<?php $this->load->view('_common/meta');?>
 	<title>Welcome to CodeIgniter</title>
-
+	<?php $this->load->view('_common/css');?>
 	<style type="text/css">
 
 	::selection { background-color: #E13300; color: white; }
@@ -84,6 +85,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
-
+<?php $this->load->view('_common/js');?>
 </body>
 </html>
